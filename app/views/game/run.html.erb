@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="container text-center">
+    <div class="row">
+    <div class="card">
+
+        <h1>Longest word game</h1>
+
+        <h2>Grid: <%= @grid %></h2>
+
+        <form action="<%= result_path %>" method="get">
+          <input class="form-control" type="text" name="attempt">
+          <input type="hidden" name="grid" value="<%= @grid %>">
+          <input type="hidden" name="start_time" value="<%= @start_time %>">
+          <button type="submit" class="btn btn-info" value="GO">GO</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
